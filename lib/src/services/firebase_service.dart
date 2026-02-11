@@ -22,7 +22,8 @@ class FirebaseService {
       final authDomain = dotenv.env['FIREBASE_AUTH_DOMAIN'] ?? '';
       final projectId = dotenv.env['FIREBASE_PROJECT_ID'] ?? '';
       final storageBucket = dotenv.env['FIREBASE_STORAGE_BUCKET'] ?? '';
-      final messagingSenderId = dotenv.env['FIREBASE_MESSAGING_SENDER_ID'] ?? '';
+      final messagingSenderId =
+          dotenv.env['FIREBASE_MESSAGING_SENDER_ID'] ?? '';
       final appId = dotenv.env['FIREBASE_APP_ID'] ?? '';
       final measurementId = dotenv.env['FIREBASE_MEASUREMENT_ID'] ?? '';
 
