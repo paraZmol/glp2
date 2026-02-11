@@ -120,16 +120,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
-buildscript {
-    repositories {
-        // ...existing code...
-    }
-    dependencies {
-        // ...existing code...
-        // Agregado para Google Services plugin (Firebase)
-        classpath 'com.google.gms:google-services:4.4.1'
-    }
-}
-
-// removed stray Gradle lines that were accidentally inserted into this Dart file
