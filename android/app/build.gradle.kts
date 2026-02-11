@@ -53,3 +53,6 @@ android {
 flutter {
     source = "../.."
 }
+
+// apply google services plugin to process google-services.json from flavor folders
+apply(plugin = "com.google.gms.google-services")
