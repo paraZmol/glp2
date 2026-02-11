@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'src/flavors/flavor_config.dart';
 import 'src/services/firebase_service.dart';
+import 'src/features/auth/auth_page.dart';
 
 Future<void> mainCommon(Flavor flavor) async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Sistema GLP JLA',
-      home: const Scaffold(body: Center(child: Text('sistema glp jla'))),
+      home: const AuthPage(),
     );
   }
 }
