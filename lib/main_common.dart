@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'src/flavors/flavor_config.dart';
+import 'src/services/firebase_service.dart';
 
 Future<void> mainCommon(Flavor flavor) async {
   WidgetsFlutterBinding.ensureInitialized();
   FlavorConfig.setup(flavor);
+  await FirebaseService.init(flavor);
   runApp(const MyApp());
 }
 
